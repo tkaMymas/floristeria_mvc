@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Facturas</title>
+</head>
+<body>
+  <h1>Facturas</h1>
+  <table>
+    <thead>
+    <tr>
+      <th>Total</th>
+      <th>Fecha de Emisión</th>
+      <th>Pedido</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="factura : ${facturas}">
+      <td th:text="${factura.total}">Total</td>
+      <td th:text="${factura.fechaEmision}">Fecha de Emisión</td>
+      <td th:text="${factura.pedido.id}">Pedido</td>
+    </tr>
+    </tbody>
+  </table>
+  <a href="/facturas/nueva">Generar nueva factura</a>
+</body>
+</html>

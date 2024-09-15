@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Entregas</title>
+</head>
+<body>
+  <h1>Entregas</h1>
+  <table>
+    <thead>
+    <tr>
+      <th>Conductor</th>
+      <th>Ruta</th>
+      <th>Estado</th>
+      <th>Pedido</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="entrega : ${entregas}">
+      <td th:text="${entrega.nombreConductor}">Conductor</td>
+      <td th:text="${entrega.ruta}">Ruta</td>
+      <td th:text="${entrega.estadoEntrega}">Estado</td>
+      <td th:text="${entrega.pedido.id}">Pedido</td>
+    </tr>
+    </tbody>
+  </table>
+  <a href="/entregas/nueva">Asignar nueva entrega</a>
+</body>
+</html>

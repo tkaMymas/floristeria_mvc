@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Nueva Flor</title>
+</head>
+<body>
+  <h1>Agregar Nueva Flor</h1>
+  <form th:action="@{/inventario/nueva}" th:object="${flor}" method="post">
+    <label>Tipo:</label> <input type="text" th:field="*{tipo}" /><br/>
+    <label>Color:</label> <input type="text" th:field="*{color}" /><br/>
+    <label>Variedad:</label> <input type="text" th:field="*{variedad}" /><br/>
+    <label>Cantidad Disponible:</label> <input type="number" th:field="*{cantidadDisponible}" /><br/>
+    <label>Precio Compra:</label> <input type="text" th:field="*{precioCompra}" /><br/>
+    <label>Precio Venta:</label> <input type="text" th:field="*{precioVenta}" /><br/>
+    <button type="submit">Agregar Flor</button>
+  </form>
+</body>
+</html>

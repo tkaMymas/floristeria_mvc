@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inventario Flores</title>
+</head>
+<body>
+    <h1>Inventario de Flores</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Tipo</th>
+                <th>Color</th>
+                <th>Variedad</th>
+                <th>Cantidad Disponible</th>
+                <th>Precio Compra</th>
+                <th>Precio Venta</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr th:each="flor : ${flores}">
+            <td th:text="${flor.tipo}">Tipo</td>
+            <td th:text="${flor.color}">Color</td>
+            <td th:text="${flor.variedad}">Variedad</td>
+            <td th:text="${flor.cantidadDisponible}">Cantidad Disponible</td>
+            <td th:text="${flor.precioCompra}">Precio Compra</td>
+            <td th:text="${flor.precioVenta}">Precio Venta</td>
+        </tr>
+        </tbody>
+    </table>
+    <a href="/inventario/nueva">Agregar nueva flor</a>
+</body>
+</html>
