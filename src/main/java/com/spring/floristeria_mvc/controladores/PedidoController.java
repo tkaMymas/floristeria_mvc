@@ -20,6 +20,7 @@ public class PedidoController {
 
     @GetMapping
     public String listarPedidos(Model model){
+        model.addAttribute("titulo", "PEDIDOS");
         List<Pedido> pedidos = pedidoRepository.findAll();
         model.addAttribute("pedidos", pedidos);
         return "pedidos";

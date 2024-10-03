@@ -23,6 +23,7 @@ public class FacturaController {
 
     @GetMapping
     public String listarFacturas(Model model) {
+        model.addAttribute("titulo", "FACTURAS");
         List<Factura> facturas = facturaRepository.findAll();
         model.addAttribute("facturas", facturas);
         return "facturas";

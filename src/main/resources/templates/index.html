@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <meta charset="UTF-8">
-<html xmlns="http://www.thymeleaf.org" lang="es">
+<link rel="stylesheet" href="/style_index.css">
+<link rel="stylesheet" href="/style_tituloPrin.css">
+
+<html lang="es" >
 <head>
   <title>Página Floristeria MVC</title>
 </head>
 <body>
-  <h1 th:text="${title}"></h1>
+  <h1 class="tituloPrincipal" th:text="${title}"></h1>
   <ul>
     <li><a th:href="@{/inventario}">Gestión de Inventario</a></li>
     <li><a th:href="@{/pedidos}">Gestión de Pedidos</a></li>

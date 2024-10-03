@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <meta charset="UTF-8">
+<link rel="stylesheet" href="/style_tituloPrin.css">
+
 <html lang="es">
 <head>
   <title>Facturas</title>
 </head>
 <body>
-  <h1>Facturas</h1>
+  <h1 class="tituloPrincipal" th:text="${titulo}"></h1>
   <table>
     <thead>
     <tr>
@@ -22,6 +24,5 @@
     </tr>
     </tbody>
   </table>
-  <a href="/facturas/nueva">Generar nueva factura</a>
 </body>
 </html>

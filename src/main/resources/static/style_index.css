@@ -1,0 +1,15 @@
+ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+
+    padding: 5px;
+
+    background-color: rgb(255, 200, 182);
+}
+li a {
+    color: rgb(31, 31, 31);
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}

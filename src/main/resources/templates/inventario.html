@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <meta charset="UTF-8">
+<link rel="stylesheet" href="/style_inventario.css">
+<link rel="stylesheet" href="/style_tituloPrin.css">
+
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Inventario Flores</title>
+    <title>Inventario Floristeria</title>
 </head>
 <body>
-    <h1>Inventario de Flores</h1>
+    <h1 class="tituloPrincipal" th:text="${title}"></h1>
     <table>
         <thead>
             <tr>
@@ -29,6 +31,5 @@
         </tr>
         </tbody>
     </table>
-    <a href="/inventario/nueva">Agregar nueva flor</a>
 </body>
 </html>

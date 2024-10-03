@@ -20,6 +20,7 @@ public class FlorController {
 
     @GetMapping
     public String listarFlores(Model model){
+        model.addAttribute("title", "INVENTARIO DE FLORES");
         List<Flor> flores = florRepository.findAll();
         model.addAttribute("flores", flores);
         return "inventario";

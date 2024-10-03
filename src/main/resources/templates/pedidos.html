@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <meta charset="UTF-8">
+<link rel="stylesheet" href="/style_tituloPrin.css">
+
 <html lang="es">
 <head>
   <title>Pedidos</title>
 </head>
 <body>
-  <h1>Pedidos</h1>
+  <h1 class="tituloPrincipal" th:text="${titulo}"></h1>
   <table>
     <thead>
     <tr>
@@ -26,6 +28,5 @@
     </tr>
     </tbody>
   </table>
-  <a href="/pedidos/nuevo">Agregar nuevo pedido</a>
 </body>
 </html>

@@ -23,6 +23,7 @@ public class EntregaController {
 
     @GetMapping
     public String listarEntregas(Model model){
+        model.addAttribute("titulo", "ENTREGAS");
         List<Entrega> entregas = entregaRepository.findAll();
         model.addAttribute("entregas", entregas);
         return "entregas";
