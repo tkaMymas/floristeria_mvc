@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <meta charset="UTF-8">
-<html lang="es">
+<html xmlns="http://www.thymeleaf.org" lang="es">
 <head>
   <title>Página Floristeria MVC</title>
 </head>
 <body>
-  <h1>FLORISTERÍA MVC</h1>
-  <p>Desde aquí, puedes acceder a las diferentes funcionalidades:</p>
+  <h1 th:text="${title}"></h1>
   <ul>
-    <li><a href="/inventario">Gestión de Inventario</a></li>
-    <li><a href="/pedidos">Gestión de Pedidos</a></li>
-    <li><a href="/entregas">Gestión de Entregas</a></li>
-    <li><a href="/facturas">Gestión de Facturas</a></li>
+    <li><a th:href="@{/inventario}">Gestión de Inventario</a></li>
+    <li><a th:href="@{/pedidos}">Gestión de Pedidos</a></li>
+    <li><a th:href="@{/entregas}">Gestión de Entregas</a></li>
+    <li><a th:href="@{/facturas}">Gestión de Facturas</a></li>
   </ul>
 </body>
 </html>
